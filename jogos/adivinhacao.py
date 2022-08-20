@@ -1,8 +1,11 @@
+import random
+
 print("*********************************")
 print("Bem vindo ao jogo de Adivinhação!")
 print("*********************************")
 
-numero_secreto = 42
+numero_random = random.random() * 100
+numero_secreto = int(round(numero_random))
 total_de_tentativas = 5
 
 for rodada in range(1, total_de_tentativas + 1):
@@ -34,4 +37,4 @@ for rodada in range(1, total_de_tentativas + 1):
 
     rodada = rodada + 1
 
-print("Fim do jogo")
+print("Fim do jogo! O número era {}.".format(numero_secreto))
