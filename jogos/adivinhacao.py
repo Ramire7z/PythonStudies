@@ -52,7 +52,7 @@ def jogar():
             pontos_perdidos = abs(numero_secreto - chute)
             pontos = pontos - pontos_perdidos
 
-        rodada = rodada + 1
+        rodada += 1
 
     print("Fim do jogo! O número era {}.".format(numero_secreto))
 
